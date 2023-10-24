@@ -1,0 +1,15 @@
+.bars {
+  display: flex;
+  justify-content: center;
+}
+
+.bar-container {
+  text-align: center;
+  margin: 5px;
+}
+
+.bar {
+  background-color: orange;
+  margin-top: 5px;
+  width: 40px;
+}
