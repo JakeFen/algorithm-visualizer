@@ -1,14 +1,11 @@
-import "./line-graph.scss";
-
 const LineGraph = ({ numArray }) => {
   return (
-    <div className="bars">
+    <div className="line-graph">
       {numArray &&
-        numArray.map((num, i) => {
+        numArray.map((num, index) => {
           return (
-            <div key={i} className="bar-container">
+            <div key={index} className="line-graph__bar">
               {num}
-              <div className="bar" style={{ height: num * 2.5 }}></div>
             </div>
           );
         })}
