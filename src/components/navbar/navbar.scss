@@ -22,8 +22,7 @@ header {
     align-items: center;
   }
 
-  button,
-  .dropdown-toggle {
+  button {
     height: 42px;
     display: flex;
     align-items: center;
@@ -41,27 +40,5 @@ header {
     &:active {
       background-color: #e6e6e6;
     }
-  }
-}
-
-.dropdown-menu {
-  width: max-content;
-
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    height: 42px;
-  }
-}
-
-.control-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 42px;
-  padding: 0 8px;
-
-  label {
-    margin-right: 8px;
   }
 }

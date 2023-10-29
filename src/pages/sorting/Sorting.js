@@ -68,7 +68,7 @@ const Sorting = () => {
       <Navbar>
         <div className="controls">
           <button onClick={() => handleSort(method, numArray)}>Sort</button>
-          <button onClick={randomize}>Randomize</button>
+          <button onClick={() => randomize(numArraySize)}>Randomize</button>
 
           <FormControl size="small">
             <Select value={method.key} displayEmpty onChange={handleChange}>
