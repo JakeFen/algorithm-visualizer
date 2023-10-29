@@ -1,4 +1,3 @@
-import { SelectedSort } from "./SelectedSort";
 import { BubbleSort } from "./BubbleSort";
 
 export const SortingAlgorithm = (method, numArray) => {
@@ -6,9 +5,6 @@ export const SortingAlgorithm = (method, numArray) => {
   switch (method) {
     case "bubble":
       return BubbleSort(numArray);
-
-    case "selected":
-      return SelectedSort(numArray);
 
     default:
       return method;

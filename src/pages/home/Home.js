@@ -10,14 +10,14 @@ const Home = () => {
           This application is to provide a visual representation of how some
           comment algorithms function
         </p>
-        <ul>
-          <li>
+        <ul className="nav__list">
+          <li className="nav__list--item">
             <Link to="/pathfinding">
               <img src="https://fakeimg.pl/200x200" alt="" />
             </Link>
             <h2>Pathfinding</h2>
           </li>
-          <li>
+          <li className="nav__list--item">
             <Link to="/sorting">
               <img src="https://fakeimg.pl/200x200" alt="" />
             </Link>

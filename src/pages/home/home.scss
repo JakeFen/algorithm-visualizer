@@ -18,11 +18,11 @@ h1 {
   margin-bottom: 30px;
 }
 
-ul {
+.nav__list {
   display: flex;
   justify-content: center;
 
-  li {
+  &--item {
     text-align: center;
     margin: 0 20px;
 

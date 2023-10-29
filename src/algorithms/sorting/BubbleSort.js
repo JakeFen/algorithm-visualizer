@@ -29,7 +29,6 @@ export const BubbleSort = (numArray) => {
       // After loop the last item in the arr should be the highest num
       // Set last item in arr to complete
       if (i === loopLength - 1) {
-        console.log(loopLength);
         numArray[i + 1].style = "complete";
         animations.push(JSON.parse(JSON.stringify(numArray)));
         loopLength--;

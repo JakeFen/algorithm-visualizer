@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
 // Pages
-import Sorting from "./pages/Sorting";
+import Sorting from "./pages/sorting/Sorting";
 import Pathfinding from "./pages/Pathfinding";
 import Home from "./pages/home/Home";
 
