@@ -1,13 +1,9 @@
 import { SelectedSort } from "./SelectedSort";
 import { BubbleSort } from "./BubbleSort";
-import InsertionSort from "./InsertionSort/InsertionSort";
 
-export const SortingAlgorithm = (method, numArray, arraySteps, colorSteps) => {
+export const SortingAlgorithm = (method, numArray) => {
   if (method === null) return;
-  switch (method.key) {
-    case "insertion":
-      return InsertionSort(numArray, arraySteps, colorSteps);
-
+  switch (method) {
     case "bubble":
       return BubbleSort(numArray);
 

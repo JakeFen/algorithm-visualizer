@@ -1,0 +1,21 @@
+.line-graph {
+  display: flex;
+  &__bar {
+    text-align: center;
+    width: 40px;
+    background-color: lightblue;
+    margin: 0 5px;
+  }
+}
+
+.sorted {
+  background-color: green;
+}
+
+.comparing {
+  background-color: yellow;
+}
+
+.complete {
+  background-color: lightgreen;
+}

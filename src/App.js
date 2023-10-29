@@ -5,7 +5,6 @@ import "./App.scss";
 import Sorting from "./pages/Sorting";
 import Pathfinding from "./pages/Pathfinding";
 import Home from "./pages/home/Home";
-import Sort from "./pages/Sort";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/sorting" element={<Sort />} />
+            <Route path="/sorting" element={<Sorting />} />
             <Route path="/pathfinding" element={<Pathfinding />} />
           </Routes>
         </BrowserRouter>
