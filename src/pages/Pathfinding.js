@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Navbar from "../components/navbar/Navbar";
-import { Dropdown } from "react-bootstrap";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { PathFinding } from "../algorithms/pathFinding/PathFinding";
+
+// Components
+import Navbar from "../components/navbar/Navbar";
 
 const algorithms = [
   { value: "Dijkstra's Algorithm", key: "dijkstra" },
@@ -18,22 +18,6 @@ const Pathfinding = () => {
         <div className="controls">
           <button onClick={() => PathFinding(method?.key)}>Find Path</button>
           <button>Reset</button>
-
-          <NavDropdown title={method ? method.value : "Algorithms"}>
-            {algorithms &&
-              algorithms.map((algorithm) => {
-                return (
-                  <Dropdown.Item
-                    key={algorithm.key}
-                    onClick={() => {
-                      setMethod(algorithm);
-                    }}
-                  >
-                    {algorithm.value}
-                  </Dropdown.Item>
-                );
-              })}
-          </NavDropdown>
 
           <div className="control-item">
             <label htmlFor="speed">Speed: </label>
