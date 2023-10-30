@@ -6,9 +6,13 @@
 
   &__bar {
     text-align: center;
-    width: 40px;
+    width: 8px;
     background-color: lightblue;
-    margin: 0 2.5px;
+    margin: 0 2px;
+
+    &--value {
+      display: none;
+    }
   }
 }
 
@@ -22,4 +26,48 @@
 
 .complete {
   background-color: lightgreen;
+}
+
+@media (min-width: 768px) {
+  .line-graph {
+    &__bar {
+      width: 15px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .line-graph {
+    &__bar {
+      width: 20px;
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .line-graph {
+    &__bar {
+      width: 25px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .line-graph {
+    &__bar {
+      width: 30px;
+
+      &--value {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .line-graph {
+    &__bar {
+      width: 35px;
+    }
+  }
 }

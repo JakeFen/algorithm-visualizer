@@ -12,7 +12,7 @@ const LineGraph = ({ numArray }) => {
                 className={`line-graph__bar ${num.style}`}
                 style={{ height: num.value * 3, order: index }}
               ></div>
-              {num.value}
+              <p className="line-graph__bar--value"> {num.value}</p>
             </div>
           );
         })}
