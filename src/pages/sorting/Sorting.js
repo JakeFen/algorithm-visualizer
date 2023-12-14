@@ -12,7 +12,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Slider from "@mui/material/Slider";
 
-const algorithms = [{ value: "Bubble Sort", key: "bubble" }];
+const algorithms = [
+  { value: "Bubble Sort", key: "bubble" },
+  { value: "Insertion Sort", key: "insertion" },
+];
 
 const Sorting = () => {
   const [method, setMethod] = useState({ value: "Bubble Sort", key: "bubble" });
