@@ -6,12 +6,13 @@ const LineGraph = ({ numArray }) => {
       {numArray &&
         numArray.map((num, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="line-graph__container">
               <div
                 className={`line-graph__bar ${num.style}`}
-                style={{ height: num.value * 3, order: index }}
-              ></div>
-              <p className="line-graph__bar--value">{num.value}</p>
+                style={{ height: 23 + num.value, order: index }}
+              >
+                <p className="line-graph__bar--value">{num.value}</p>
+              </div>
             </div>
           );
         })}

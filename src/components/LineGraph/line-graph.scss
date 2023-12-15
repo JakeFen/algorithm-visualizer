@@ -1,14 +1,22 @@
 .line-graph {
   display: flex;
   align-items: flex-end;
-  height: 800px;
+  height: 425px;
   text-align: center;
 
-  &__bar {
-    text-align: center;
+  &__container {
+    position: relative;
     width: 8px;
-    background-color: lightblue;
     margin: 0 2px;
+  }
+
+  &__bar {
+    width: 8px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: lightblue;
 
     &--value {
       display: none;
@@ -18,6 +26,12 @@
 
 .sorted {
   background-color: green;
+}
+
+.pulled {
+  background-color: red;
+  position: absolute;
+  top: 20px;
 }
 
 .comparing {
@@ -30,7 +44,7 @@
 
 @media (min-width: 768px) {
   .line-graph {
-    &__bar {
+    &__container {
       width: 15px;
     }
   }
@@ -38,6 +52,7 @@
 
 @media (min-width: 992px) {
   .line-graph {
+    &__container,
     &__bar {
       width: 20px;
     }
@@ -46,6 +61,7 @@
 
 @media (min-width: 1220px) {
   .line-graph {
+    &__container,
     &__bar {
       width: 25px;
     }
@@ -54,18 +70,20 @@
 
 @media (min-width: 1440px) {
   .line-graph {
+    &__container,
     &__bar {
       width: 30px;
+    }
 
-      &--value {
-        display: block;
-      }
+    &__bar--value {
+      display: block;
     }
   }
 }
 
 @media (min-width: 1600px) {
   .line-graph {
+    &__container,
     &__bar {
       width: 35px;
     }

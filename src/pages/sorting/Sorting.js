@@ -18,7 +18,10 @@ const algorithms = [
 ];
 
 const Sorting = () => {
-  const [method, setMethod] = useState({ value: "Bubble Sort", key: "bubble" });
+  const [method, setMethod] = useState({
+    value: "Insertion Sort",
+    key: "insertion",
+  });
   const [numArray, setNumArray] = useState();
   const [numArraySize, setNumArraySize] = useState(15);
   const [delay, setDelay] = useState(15);
@@ -27,7 +30,7 @@ const Sorting = () => {
     const arr = [];
 
     for (var i = 0; i < numArraySize; i++) {
-      arr.push({ value: Math.floor(Math.random() * 250) + 10, style: "" });
+      arr.push({ value: Math.floor(Math.random() * 150) + 1, style: "" });
     }
     setNumArray(arr);
   };
