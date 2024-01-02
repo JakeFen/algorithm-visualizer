@@ -16,12 +16,15 @@ const algorithms = [
   { value: "Bubble Sort", key: "bubble" },
   { value: "Insertion Sort", key: "insertion" },
   { value: "Selection Sort", key: "selection" },
+  { value: "Merge Sort", key: "merge" },
+  { value: "Quick Sort", key: "quick" },
+  { value: "Heap Sort", key: "heap" },
 ];
 
 const Sorting = () => {
   const [method, setMethod] = useState({
-    value: "Insertion Sort",
-    key: "insertion",
+    value: "Selection Sort",
+    key: "selection",
   });
   const [numArray, setNumArray] = useState();
   const [numArraySize, setNumArraySize] = useState(15);

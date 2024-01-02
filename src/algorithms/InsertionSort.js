@@ -1,4 +1,4 @@
-export const inserationSort = (numArray) => {
+export const InserationSort = (numArray) => {
   let animations = [];
 
   for (let i = 0; i < numArray.length; i++) {
