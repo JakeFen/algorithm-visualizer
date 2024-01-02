@@ -3,8 +3,6 @@ import "./App.scss";
 
 // Pages
 import Sorting from "./pages/sorting/Sorting";
-import Pathfinding from "./pages/Pathfinding";
-import Home from "./pages/home/Home";
 
 function App() {
   return (
@@ -12,9 +10,7 @@ function App() {
       <div className="pages">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sorting" element={<Sorting />} />
-            <Route path="/pathfinding" element={<Pathfinding />} />
+            <Route path="/" element={<Sorting />} />
           </Routes>
         </BrowserRouter>
       </div>

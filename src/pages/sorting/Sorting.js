@@ -1,12 +1,12 @@
 import "./sorting.scss";
 import { useEffect, useState } from "react";
-import { SortingAlgorithm } from "../../algorithms/sorting/Sorting";
+import { SortingAlgorithm } from "../../algorithms/Sorting";
+import { Link } from "react-router-dom";
 
 // Components
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import Navbar from "../../components/navbar/Navbar";
 import LineGraph from "../../components/LineGraph/LineGraph";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -72,25 +72,31 @@ const Sorting = () => {
 
   return (
     <div>
-      <Navbar>
-        <div className="controls">
-          <button onClick={() => handleSort(method, numArray)}>Sort</button>
-          <button onClick={() => randomize(numArraySize)}>Randomize</button>
+      <header>
+        <nav className="container">
+          <Link to="/" className="logo">
+            Algorithm Visualizer
+          </Link>
 
-          <FormControl size="small">
-            <Select value={method.key} displayEmpty onChange={handleChange}>
-              {algorithms &&
-                algorithms.map((algorithm) => {
-                  return (
-                    <MenuItem key={algorithm.key} value={algorithm.key}>
-                      {algorithm.value}
-                    </MenuItem>
-                  );
-                })}
-            </Select>
-          </FormControl>
-        </div>
-      </Navbar>
+          <div className="controls">
+            <button onClick={() => handleSort(method, numArray)}>Sort</button>
+            <button onClick={() => randomize(numArraySize)}>Randomize</button>
+
+            <FormControl size="small">
+              <Select value={method.key} displayEmpty onChange={handleChange}>
+                {algorithms &&
+                  algorithms.map((algorithm) => {
+                    return (
+                      <MenuItem key={algorithm.key} value={algorithm.key}>
+                        {algorithm.value}
+                      </MenuItem>
+                    );
+                  })}
+              </Select>
+            </FormControl>
+          </div>
+        </nav>
+      </header>
 
       <main className="sorting container">
         <Box sx={{ width: 250 }} className="slider__container">

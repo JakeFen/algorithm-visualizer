@@ -40,7 +40,8 @@
 
 @media (min-width: 768px) {
   .line-graph {
-    &__container {
+    &__container,
+    &__bar {
       width: 15px;
     }
   }
