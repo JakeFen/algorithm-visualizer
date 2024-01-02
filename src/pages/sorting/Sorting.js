@@ -15,6 +15,7 @@ import Slider from "@mui/material/Slider";
 const algorithms = [
   { value: "Bubble Sort", key: "bubble" },
   { value: "Insertion Sort", key: "insertion" },
+  { value: "Selection Sort", key: "selection" },
 ];
 
 const Sorting = () => {
